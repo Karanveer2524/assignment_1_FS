@@ -1,82 +1,83 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 80%;
+  margin: 10px auto 0;
+  padding: 0.3em;
+  line-height: 1.6;
+}
 
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0.3em;
-    padding: 0.3em;
-    line-height: 1.6;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  main {
-    background-color: lightgray;
-    max-width: 75%;
-    margin: auto;
-  }
+nav span {
+  margin: 0.5em;
+}
 
-  header, main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.logo img {
+  width: 30px;
+}
 
-  h1, h2, h3 {
-    color: #444;
-    margin-bottom: 0.5em;
-  }
-  h2 {
-    font-size: 1em;
-  }
+.button {
+  background: #283891;
+  padding: 10px;
+  border-radius: 7px;
+}
 
-  a {
-    color: darkblue;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-  }
+.button:hover {
+  background: #57bee8;
+  transition: 500ms;
+}
 
-  a:hover {
-    border-bottom: 1px solid #007BFF;
-  }
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
 
-  /* Container styles */
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+main {
+  max-width: 75%;
+  margin: auto;
+}
 
-  /* Form input styles */
-  input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
+header,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  input:focus, textarea:focus, select:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
-  }
+main h2,
+#employee-list {
+  text-align: left;
+  width: 100%;
+}
 
-  /* FOOTER */
-  footer {
-    position: fixed;
-    bottom: 0;
-    right: 1em;
-  }
-  /* NAV */
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
+h1 {
+  color: #283891;
+}
 
-  nav span {
-    margin: 0.5em;
-  }
+h2,
+h3 {
+  color: #444;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1em;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+}
+footer span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
