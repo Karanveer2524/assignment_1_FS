@@ -26,15 +26,14 @@ const populateEmployees = (listNode, employees) => {
   });
 };
 
-/** 
-// add event listener to the "document" node
-// callback function invokes when event "fires" on element that listener was
-appended to, in this case, when the DOM has loaded fully
-*/
+// Run after DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // store the DOM node referencing an element with class "top-terms__list"
-  const termListNode = document.querySelector(".top-terms__list");
+  const listNode = document.getElementById("employee-list");
+  populateEmployees(listNode, employees);
 
-  // invoke function passing in DOM node and terms array
-  populateTermList(termListNode, terms);
+  // Auto-update year in footer
+  const year = new Date().getFullYear();
+  document.getElementById(
+    "copyright"
+  ).textContent = `Copyright Pixell River Financial ${year}`;
 });
